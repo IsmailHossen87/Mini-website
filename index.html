@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductSeller</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    /* Button style */
+    .toggle-button {
+      padding: 3px 20px;
+      font-size: 16px;
+      color: #0077ff;
+      border: 1px solid #0077ff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .active {
+      background-color: #0077ff;
+      color: white;
+    }
+</style>
+
+</head>
+<body>
+    <div class="grid grid-cols-2 container m-auto px-3 mt-10">
+        <!-- left part -->
+         <div class="col-span-1 border-r-2 border-dashed">
+            <h2>Process</h2>
+            <!-- jamela start -->
+            <ul class="timeline">
+                <li>
+                  <div class="timeline-middle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    
+                      class="h-5 w-7">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="timeline-end">Method</div>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <div class="timeline-middle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="h-5 w-5">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="timeline-end">Details</div>
+                  <hr />
+                </li>
+                <li>
+                  <hr />
+                  <div class="timeline-middle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="h-5 w-5">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="timeline-end">Confirm</div>
+                </li>
+              </ul>
+             <!-- jamela end -->
+           <div class="w-2/3 mt-8">
+            <p>Select Method</p>
+            <div class="flex">
+            </div>
+            <div>
+                <h3 class="mt-4">Card Holder Name</h3>
+                <input type="text" class="bg-gray-100 mt-2 rounded-md py-1 px-2 border-none" placeholder="Your Name">
+                <h3 class="mt-4">Card Number</h3>
+                <input type="text"  class="bg-gray-100 mt-2 rounded-md py-1 px-2 border-none" placeholder="Card Number">
+               <div class="flex justify-between">
+                <div>
+                    <h3 class="mt-4">Expire Date</h3>
+                    <p class="border rounded-md px-2 py-1 mt-2 bg-gray-100">2 January 2027</p></div>
+                <div> 
+                    <h3 class="mt-4">CVV</h3>
+                    <p class="border rounded-md px-4 py-1 mt-2 bg-gray-100">399</p></div></div>
+             </div>
+             <h3 class="mt-4">Location</h3>
+             <input type="text"  class="bg-gray-100 mt-2 rounded-md py-1 px-2 border-none" placeholder="Your Area">
+             <div class="flex justify-between mt-4">
+                <button class="toggle-button" id="button1">Back</button>
+                <button class="toggle-button" id="button2">Confirm</button>              
+             </div>
+           </div>
+        </div>
+
+          <!-- right part -->
+          <div class="col-span-1 ml-auto w-2/3">
+            <p>Product Details</p>
+            <div class="flex gap-4">
+                <img class="shadow-lg rounded-lg h-32"  src="assest/download (1).jpeg" alt="">
+                <img class="shadow-lg rounded-lg h-32" src="assest/download.22jpeg.jpeg" alt="">
+            </div>
+            <h4 class="font-semibold mt-8">GIGABYTE AORUS AGC310 Gaming Chair</h4>
+            <div class="flex justify-between mt-7">
+                <p class="px-3 py-1 border rounded-lg bg-[#0077ff] text-white">Price:245.59$</p>
+                <p class="px-2 py-1 bg-gray-100 rounded-lg">Product Code:2698</p>
+                <p class="px-3 py-1 bg-gray-100 rounded-lg">Brand: Gigabyte</p>
+            </div>
+            <h4 class="mt-8 font-semibold">Key Feature</h4>
+                <li>Model: AORUS AGC310</li>
+                <li>CLASS 4 Certified Gas Lift</li>
+                <li>160º Max Tilting Angle</li>
+                <li>All-Steel Frame & Base</li>
+                <li>2D Adjustable Armrest</li>
+
+                <div id="counter-container" class="mt-8 w-32  ">
+                   <div class=" bg-gray-100 px-3 py-2 rounded-2xl">
+                    <button onclick="decrease()"> <i class="fa-solid font-bold mr-3 bg-[#0077ff] text-white p-2 rounded-md fa-minus"></i></button>
+                    <span id="number">0</span>
+                    <button onclick="increase()"><i class="fa-solid fa-plus ml-3 bg-[#0077ff] text-white p-2 rounded-md "></i></button>
+                   </div>
+                  </div>
+              
+          </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
